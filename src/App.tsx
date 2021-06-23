@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
-import { Todo } from './models/todo';
+// import { Route } from 'react-router-dom';
+
+// About Redux with TypeScript
+// https://redux-toolkit.js.org/usage/usage-with-typescript
 
 import TodoList from './components/TodoList';
 import NewTodo from './components/NewTodo';
+import { Todo } from './models/todo';
 
 const App: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
